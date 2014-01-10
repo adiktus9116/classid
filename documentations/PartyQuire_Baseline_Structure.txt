@@ -1,0 +1,37 @@
+Baseline Framework
+
+[Controllers]
+	/application/core/Base_Controller.php
+		- contains all reusable controller functions
+		- to be inherited by all controllers except the authentication controller
+		- checks the session availability
+		- loads the global views such as includes_view, header_view, and footer_view
+
+	/application/controllers/authentication.php
+		- contains login and logout function
+
+	/application/controllers/main.php
+		- contains all initial functions of partyquire
+
+[Models]
+	/application/models/user_model.php
+		- contains all user related functions
+		- contains authenticate_user function to be used in user authentication
+
+[Views]
+	/applications/views/includes/includes_view.php
+		- contains all common javascript and css inclusions
+	
+	/applications/views/header_and_footer/header_view.php
+		- contains the application header
+		
+	/applications/views/header_and_footer/footer_view.php
+		- contains the application footer
+
+[Scripts]
+	/scripts/script_lib.js
+		- contains all reusable javascript functions
+
+[CSS]
+	/css/validation.css
+		- contains all field validation formatings

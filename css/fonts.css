@@ -1,0 +1,9 @@
+@font-face {
+	font-family: Moonbeam;
+	src: local(Moonbeam), url('fonts/Moonbeam.ttf') format('opentype');
+}
+
+@font-face {
+	font-family: Myriad Roman;
+	src: local(Myriad_roman), url('fonts/Myriad Roman.ttf') format('opentype');
+}

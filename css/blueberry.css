@@ -1,0 +1,82 @@
+/*
+ * jQuery Blueberry Slider v0.4 BETA
+ * http://marktyrrell.com/labs/blueberry/
+ *
+ * Copyright (C) 2011, Mark Tyrrell <me@marktyrrell.com>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+
+.blueberry { margin: 0; padding:0;}
+.blueberry .slides {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	list-style: none;
+	padding: 0px;
+	-webkit-padding-start: 0px;
+}
+.blueberry .slides li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	z-index: 90;
+	width:100%;
+}
+.blueberry .slides li img {
+	display: block;
+	width: 100%;
+	max-width: 1920px;
+	margin: 0;
+}
+.blueberry .slides li.active { display: block; position: relative; z-index: 100 !important; }
+.blueberry .crop li img { width: auto; }
+
+.blueberry .pager {
+	position: absolute;
+	height: 40px;
+	text-align: center;
+	list-style: none;
+	z-index: 100;
+	width: 100%;
+}
+.blueberry .pager li { display: inline-block; }
+.blueberry .pager li a,
+.blueberry .pager li a span {
+	display: block;
+	height: 20px;
+	width: 20px;
+}
+.blueberry .pager li a {
+	background: #B3B3B3;
+	border: 2px #E6E6E6 solid;
+	padding: 0;
+	margin: 5px;
+}
+.blueberry .pager li a span {
+	display: none;
+	overflow: hidden;
+	background: #c0c0c0;
+	text-indent: -9999px;
+-webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.blueberry .pager li.active a { background: #404040; }
