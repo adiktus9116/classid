@@ -324,6 +324,17 @@ h4#motto {
   clear: both;
 }
 
+.alert {
+	display: none;
+	font-weight: bold;
+	position: absolute;
+	z-index: 150;
+}
+
+.alert a {
+	margin: 0 0 0 15px;
+}
+
 /* Media Queries */
 @media (min-width: 768px) {
 	.main-navbar-title {

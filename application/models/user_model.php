@@ -2,12 +2,14 @@
 
 class User_model extends CI_Model {
 
-	public function __construct (){
+	public function __construct ()
+	{
 		parent::__construct();
 		$this->load->database();
 	}
 	
-	public function authenticate_user($login_data){
+	public function authenticate_user($login_data = '')
+	{
 		$query = "
 			SELECT
 				UserAccountID,
@@ -28,6 +30,27 @@ class User_model extends CI_Model {
 			return $results[0];
 		}
 		return false;
+	}
+	
+	public function get_user_details($args = '')
+	{
+		$query = '';
+		$result = false;
+		
+		$this->db->select('*');
+		
+		if(is_array($args))
+		{
+			$this->db->where($args);
+		}
+		else 
+		{
+			// Nai desu
+		}
+		
+		$query = $this->db->get('tbluseraccounts');
+		
+		return $query->result_array();
 	}
 }
 

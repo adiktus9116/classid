@@ -1,16 +1,4 @@
-<?php echo $header;?>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<?php echo $includes;?>
-	<title>Partyquire</title>
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body>
+<?php echo $header; ?>
 	<script>
 		$(window).load(function() {
 			var navbar_toggle = 1;
@@ -48,7 +36,7 @@
 				animation:	true,
 				html	:	true,
 				placement:	'bottom',
-				content	:	'<p class="float_clear"><img src="images/facebook.gif" style="width:120px;float: left;margin-right: 5px;" /><img src="images/twitter.gif" style="width:120px;float: left;" /></p>' +
+				content	:	'<p class="float_clear"><img src="images/facebook.gif" loginType="facebook" style="width:120px;float: left;margin-right: 5px;" /><img loginType="twitter" src="images/twitter.gif" style="width:120px;float: left;" /></p>' +
 							'<p><input id="txt_username" type="text" class="form-control required" placeholder="Username"/></p>' +
 							'<p><input id="txt_password" type="password" class="form-control required" placeholder="Password" /></p>' +
 							'<p><button type="submit" class="btn btn-default" id="btn_signin">Submit</button> <label style="font-size: 8px;"><input type="checkbox"> Stay logged in</input></label></p>'
@@ -59,7 +47,7 @@
 				animation:	true,
 				html	:	true,
 				placement:	'bottom',
-				content	:	'<p class="float_clear" style="width:250px"><img src="images/facebook.gif" style="width:120px;float: left;margin-right: 5px;" /><img src="images/twitter.gif" style="width:120px;float: left;" /></p>' +
+				content	:	'<p class="float_clear" style="width:250px"><img src="images/facebook.gif" loginType="facebook" style="width:120px;float: left;margin-right: 5px;" /><img src="images/twitter.gif" loginType="twitter" style="width:120px;float: left;" /></p>' +
 							'<p><input type="text" class="form-control" placeholder="Name"/></p>' +
 							'<p><input type="text" class="form-control" placeholder="Email" /></p>' +
 							'<p><input type="password" class="form-control" placeholder="Password" /></p>' +
@@ -95,6 +83,7 @@
 		});
 	</script>
 	<div class="container container_top">
+		<div class="alert alert-danger fade in"><a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a></div>
 		<div class="row title-area">
 			<div class="col-md-4" id="logo_area">
 				<h1 id="logo">
@@ -194,8 +183,8 @@
 				<h3>Just Register and start Partyquiring!</h3>
 			</div>
 			<div class="col-md-4 col-md-offset-2" id="login_with">
-				<p><a href="#"><img src="images/facebook.gif" /></a></p>
-				<p><a href="#"><img src="images/twitter.gif" /></a></p>
+				<p><a href="#" loginType="facebook"><img src="images/facebook.gif" /></a></p>
+				<p><a href="#" loginType="twitter"><img src="images/twitter.gif" /></a></p>
 			</div>
 			<div class="col-md-4" id="home_register">
 				<form>
@@ -271,41 +260,4 @@
 				</div>
 			</div>
 		</div>
-		<div class="row" id="extralinks">
-			<div class="col-md-2">
-				<p><a href="#aboutus">About Us</a></p>
-				<p><a href="#">Our Team</a></p>
-				<p><a href="#">Jobs</a></p>
-				<p><a href="#">Sign Up</a></p>
-				<p><a href="#">Log In</a></p>
-				<p><a href="#">Help</a></p>
-			</div>
-			<div class="col-md-2">
-				<p><a href="#">Partners</a></p>
-				<p><a href="#">Listing</a></p>
-				<p><a href="#">Advertising</a></p>
-				<p><a href="#">Pricing</a></p>
-			</div>
-			<div class="col-md-2">
-				<p><a href="#">Terms of Use</a></p>
-				<p><a href="#">Privacy Policy</a></p>
-			</div>
-			<div class="col-md-2">
-				<p>Get Socials</p>
-				<p><a href="#"><img src="images/facebook_small.gif" /></a><a href="#"><img src="images/twitter_small.gif" /></a><a href="#"><img src="images/gplus_small.gif" /></a></p>
-			</div>
-			<div class="col-md-4">
-				<p>Contact Information</p>
-				<p>Email: info@partyquire.com</p>
-				<p>Mob.: +971 507281097</p>
-			</div>
-		</div>
-		<div class="row" id="footer">
-			<div class="col-md-12">
-				&copy;Partyquire.com 2013, All Rights Reserved
-			</div>
-		</div>
-	</div>
-	<?php echo $footer;?>
-</body>
-</html>
+<?php echo $footer; ?>
