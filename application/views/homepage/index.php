@@ -98,7 +98,7 @@
 			</div>
 			<div class="col-md-4">
 				<div id="list_signin">
-					<a href="#" class="btn white" id="btn_list">List your Venue</a>
+					<a href="<?php echo site_url('signup/index?t='.P_SIGNUP_HOTEL); ?>" class="btn white" id="btn_list">List your Venue</a>
 					<span id="signin_link">
 						<a href="#" id="signin">Sign in</a> | <a href="#" id="register">Register</a>
 					</span>

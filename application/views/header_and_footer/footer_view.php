@@ -19,7 +19,7 @@
 			</div>
 			<div class="col-md-2">
 				<p>Get Socials</p>
-				<p><a href="#"><img src="images/facebook_small.gif" /></a><a href="#"><img src="images/twitter_small.gif" /></a><a href="#"><img src="images/gplus_small.gif" /></a></p>
+				<p><a href="#"><img src="<?php echo base_url("images/facebook_small.gif");?>" /></a><a href="#"><img src="<?php echo base_url("images/twitter_small.gif");?>" /></a><a href="#"><img src="<?php echo base_url("images/gplus_small.gif");?>" /></a></p>
 			</div>
 			<div class="col-md-4">
 				<p>Contact Information</p>

@@ -324,15 +324,8 @@ h4#motto {
   clear: both;
 }
 
-.alert {
-	display: none;
-	font-weight: bold;
-	position: absolute;
-	z-index: 150;
-}
-
-.alert a {
-	margin: 0 0 0 15px;
+.margin-bottom_10px {
+	margin-bottom: 10px!important;
 }
 
 /* Media Queries */
